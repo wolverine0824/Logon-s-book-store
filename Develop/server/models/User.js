@@ -1,3 +1,4 @@
+// this brings in mongoose schema and modules 
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 

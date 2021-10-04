@@ -12,11 +12,13 @@ const db = require('./config/connection');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+// this is creating a new Apollo server and passing in my schema data
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: authMiddleware,
 });
+
 // This is applying the middleware
 server.applyMiddleware({ app });
 
@@ -34,6 +36,7 @@ app.get('*', (req, res) => {
 db.once('open', () => {
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
-    console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+    console.log(`Use GraphQL at 
+    http://localhost:${PORT}${server.graphqlPath}`);
   });
 });

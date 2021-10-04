@@ -1,3 +1,4 @@
+//  import the gql for APOLLO-SERVER-EXPRESS
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
@@ -9,21 +10,14 @@ const typeDefs = gql`
     thoughts: [Thought]!
   }
 
-  type Thought {
+  type Book {
     _id: ID
     thoughtText: String
     thoughtAuthor: String
     createdAt: String
     comments: [Comment]!
-  }
-
-  type Comment {
-    _id: ID
-    commentText: String
-    commentAuthor: String
-    createdAt: String
-  }
-
+  } 
+  
   type Auth {
     token: ID!
     user: User
