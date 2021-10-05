@@ -22,6 +22,7 @@ const resolvers = {
     addUser: async (parent, { username, email, password }) => {
       const user = await User.create({ username, email, password });
       const token = signToken(user);
+      console.log("userFormData", user)
       return { token, user };
     },
     // this is logging in user from there email and password
@@ -58,8 +59,7 @@ const resolvers = {
           runValidators: true,
         }
       )
-
-        return thought;
+        return updatedUser
       }
       throw new AuthenticationError('You need to be logged in!');
     },
@@ -70,11 +70,10 @@ const resolvers = {
           { _id: context.user._id },
           {
             $pull: {
-              saveBook: { bookId }} 
+              savedBooks: { bookId }} 
           },
           { new: true }
         );
-        return updatedUser;
 
       }
       // if not logged in, this is the error message
