@@ -8,6 +8,9 @@ A book search engine app that allows a user to search for new books to read and 
 
 This was a refactor of a Google Books API search engine built with a RESTful API to be a GraphQL API built with Apollo Server.
 
+https://drive.google.com/file/d/1gco4aOtE3AgkWhzB0E86ij-4HsnCefow/view?usp=sharing
+
+
 TABLE OF CONTENTS
 DESCRIPTION
 DEVELOPMENT CRITERIA
@@ -68,3 +71,6 @@ For any questions, please check out my GitHub profile or send me an email:
 
 GitHub: wolverine0824
 Email: Logonpierce@icloud.com
+![21-mern-homework-demo-01](https://user-images.githubusercontent.com/69323735/136343098-1c8edd01-da13-4b99-8318-858f4fc7c7a6.gif)
+![21-mern-homework-demo-02](https://user-images.githubusercontent.com/69323735/136343113-cf7ac037-b345-4717-8871-c798393509a8.gif)
+![21-mern-homework-demo-03](https://user-images.githubusercontent.com/69323735/136343122-5741522b-6f97-4fc4-a851-9fa417992375.gif)
